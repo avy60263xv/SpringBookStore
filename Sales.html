@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>我要賣書</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+<!-- 最新編譯和最佳化的 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- 選擇性佈景主題 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- 最新編譯和最佳化的 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+
+	html,body{
+		font-family: 小塚明朝Pr6N-Regular,微軟正黑體;
+		width: 100%;
+		height: 100%;
+	}
+	#banner{
+    background-image:url("images/sales_banner.jpg");
+    position: absolute;
+    top: -60%;
+    background-size:100%;
+	}
+	#silder_top{
+	background-color: rgba(0,0,0,0.5);
+	}
+	#sales_word{
+		position: relative;
+		top: 45%;
+		text-align:center;
+		font-size: 12px;
+	}
+	#sale_form{
+		position: relative;
+		top: 55%;
+		left: 30%;
+		width: 30%;
+	}
+
+	</style>
+</head>
+<body>
+
+	<div id="silder_top">
+		<input type="button" class="button" value="首頁" onclick="location.href='home.html'">
+		<input type="button" class="button" value="品牌理念" onclick="location.href='Brand Concept.html'">
+		<input type="button" class="button" value="我要買書" onclick="location.href='Buy.html'">
+		<input type="button" class="button" value="我要賣書" onclick="location.href='Sales.html'">
+		<input type="button" class="button" value="認識好書" onclick="location.href='Know.html'">
+		<input type="button" class="button" value="聯絡資訊" onclick="location.href='Content.html'">
+	</div>
+	<div id="banner"></div>
+
+	<div id="sales_word">
+			將您想販售之二手書，填入資料後郵寄至［807高雄市三民區建工路415號］小春光二手書店　收。<br><br>
+			我們會有專人估價書籍可販售之金額，並撥號告知，小春光二手書在售出書籍後會收取２０％之利潤。<br><br>
+			並將其餘８０％利潤以轉帳方式轉給原主人。<br>
+	</div>
+
+	<form role="form" id="sale_form">
+	<h3>書籍資料登入</h3>
+	<br>
+	  	<div id="left">
+		  	<label for="book_name">書籍名稱 *</label>
+		    <input type="text" class="form-control" id="name"maxlength="5" placeholder="書籍名稱">
+		  	<label for="book_">出版社名稱 *</label>
+		    <input type="name" class="form-control" id="Email" placeholder="出版社名稱 ">
+		    <label for="cellphone">姓名 *</label>
+		    <input type="text" class="form-control" id="cellphone" maxlength="10" placeholder="姓名">
+	  	</div>
+
+		<div id="right">
+			<label for="Email">電子郵件</label>
+		    <input type="email" class="form-control" id="Email" placeholder="輸入電子郵件">
+		    <label for="cellphone">連絡電話</label>
+		    <input type="text" class="form-control" id="cellphone" maxlength="10" placeholder="09XXXXXXXX">
+		    <label for="address">地址</label><br>
+		    <input type="text" class="form-control" id="addressnumber" maxlength="5" size="5"placeholder="郵遞區號(ex:506)"><br>
+		    <input type="text" class="form-control" id="address"  placeholder="高雄市XX區XX路XX號">	
+		</div>
+	  <br>
+	  <button type="submit" class="submit" onClick="alert('資料已送出')">送出</button>
+	</form>
+</body>
+</html>

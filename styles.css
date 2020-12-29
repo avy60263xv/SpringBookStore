@@ -1,0 +1,47 @@
+@font-face{
+font-family:小塚明朝Pr6N-Bold;
+src: local("fonts/小塚明朝Pr6N/KozMinPr6N-Bold"), 
+  url(fonts/小塚明朝Pr6N/KozMinPr6N-Bold.otf) format('OpenType');
+}
+@font-face{
+font-family:小塚明朝Pr6N-ExtraLight;
+src: local("fonts/小塚明朝Pr6N/KozMinPr6N-ExtraLight"),
+  url(fonts/小塚明朝Pr6N/KozMinPr6N-ExtraLight.otf) format('OpenType');
+}
+@font-face{
+	font-family: 'calibri-Light';
+	src:local('fonts/calibril.ttf'),
+		url(fonts/calibril.ttf) format('turetype');
+}
+body{
+	font-family: 小塚明朝Pr6N-ExtraLight,微軟正黑體;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-weight: normal;
+	font-style: normal;
+}
+#silder_top{
+		position:fixed;
+		left: 50%;
+		top: 5%;
+		z-index: 1;
+}
+.button{
+		margin: 5px;
+		width: 90px;
+		height: 40px;
+		border: none;
+		background-color:rgba(0,0,0,0);
+		color: rgb(255,255,255);
+}
+.button:hover{
+		border: 2.5px solid #ffffff;
+}
+#banner{
+	position: absolute;
+    width:100%;
+    height:100%;
+    top: -60%;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    z-index: -1;
+}
